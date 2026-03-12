@@ -25,7 +25,10 @@ Add the package to `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  flutter_widget_watermark: ^0.2.0
+  flutter_widget_watermark:
+    git:
+      url: https://github.com/iZenrix/flutter_widget_watermark.git
+      ref: main
 ```
 
 Then run:
