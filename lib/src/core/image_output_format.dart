@@ -1,0 +1,4 @@
+enum ImageOutputFormat {
+  png,
+  jpeg,
+}
