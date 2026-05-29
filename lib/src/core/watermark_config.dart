@@ -12,17 +12,6 @@ enum WatermarkMode {
 }
 
 class WatermarkConfig {
-  final WatermarkMode mode;
-  final double opacity;
-  final double rotation;
-  final EdgeInsets padding;
-  final Alignment alignment;
-  final Size spacing;
-  final Color? backgroundColor;
-  final BoxFit fit;
-  final double scale;
-  final List<WatermarkPosition>? positions;
-  final bool stagger;
 
   const WatermarkConfig({
     required this.mode,
@@ -118,4 +107,15 @@ class WatermarkConfig {
       scale: scale,
     );
   }
+  final WatermarkMode mode;
+  final double opacity;
+  final double rotation;
+  final EdgeInsets padding;
+  final Alignment alignment;
+  final Size spacing;
+  final Color? backgroundColor;
+  final BoxFit fit;
+  final double scale;
+  final List<WatermarkPosition>? positions;
+  final bool stagger;
 }

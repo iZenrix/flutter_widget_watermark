@@ -5,11 +5,6 @@ import '../core/watermark_item.dart';
 import '../core/watermark_layout.dart';
 
 class WatermarkPreview extends StatelessWidget {
-  final ImageProvider imageProvider;
-  final Widget? watermark;
-  final WatermarkConfig? config;
-  final List<WatermarkItem>? watermarks;
-  final Size? watermarkSize;
 
   const WatermarkPreview({
     super.key,
@@ -19,6 +14,11 @@ class WatermarkPreview extends StatelessWidget {
     this.watermarks,
     this.watermarkSize,
   });
+  final ImageProvider imageProvider;
+  final Widget? watermark;
+  final WatermarkConfig? config;
+  final List<WatermarkItem>? watermarks;
+  final Size? watermarkSize;
 
   @override
   Widget build(BuildContext context) {

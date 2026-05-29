@@ -21,20 +21,29 @@ This package is useful when your watermark is more than plain text, such as:
 
 ## Installation
 
-Add the package to `pubspec.yaml`:
+Install from pub.dev:
+
+```bash
+flutter pub add flutter_widget_watermark
+```
+
+Or add it manually to `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  flutter_widget_watermark:
-    git:
-      url: https://github.com/iZenrix/flutter_widget_watermark.git
-      ref: main
+  flutter_widget_watermark: ^0.1.0
 ```
 
 Then run:
 
 ```bash
 flutter pub get
+```
+
+Import it in your Dart code:
+
+```dart
+import 'package:flutter_widget_watermark/flutter_widget_watermark.dart';
 ```
 
 ## Platform support
@@ -74,6 +83,9 @@ final result = await WidgetWatermark.applyToBytes(
   ),
 );
 ```
+
+`result` is a `Uint8List` containing the encoded image bytes. The default output
+format is PNG.
 
 ## API naming
 
@@ -248,6 +260,8 @@ Places the watermark at manually provided coordinates.
 - Large source images can use significant memory during decoding and encoding.
 - URL helpers use `http`, while file helpers rely on `dart:io`.
 - Web support is not the main target for this package version.
+- The public API needs a live Flutter context because widget rendering happens
+  through Flutter's rendering pipeline.
 
 ## Testing
 

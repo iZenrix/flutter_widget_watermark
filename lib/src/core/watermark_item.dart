@@ -3,12 +3,6 @@ import 'package:flutter/widgets.dart';
 import 'watermark_layout.dart';
 
 class WatermarkItem {
-  final Widget widget;
-  final Size size;
-  final WatermarkLayout layout;
-  final double opacity;
-  final double rotation;
-  final double scale;
 
   const WatermarkItem({
     required this.widget,
@@ -18,4 +12,10 @@ class WatermarkItem {
     this.rotation = 0,
     this.scale = 1,
   });
+  final Widget widget;
+  final Size size;
+  final WatermarkLayout layout;
+  final double opacity;
+  final double rotation;
+  final double scale;
 }

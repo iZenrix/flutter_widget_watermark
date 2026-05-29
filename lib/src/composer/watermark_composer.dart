@@ -10,13 +10,13 @@ import '../utils/alignment_utils.dart';
 import '../utils/image_utils.dart';
 
 class RenderedWatermarkItem {
-  final WatermarkItem item;
-  final Uint8List bytes;
 
   const RenderedWatermarkItem({
     required this.item,
     required this.bytes,
   });
+  final WatermarkItem item;
+  final Uint8List bytes;
 }
 
 class WatermarkComposer {

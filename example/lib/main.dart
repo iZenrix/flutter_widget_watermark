@@ -1,5 +1,4 @@
 import 'dart:io';
-import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -80,7 +79,7 @@ class _WatermarkDemoPageState extends State<WatermarkDemoPage>
         _status = 'Failed: $e';
       });
     } finally {
-      if (!mounted) return;
+      if (!mounted) {}
       setState(() {
         _loading = false;
       });

@@ -35,6 +35,9 @@ class WidgetWatermark {
     int jpegQuality = 95,
   }) async {
     final Uint8List imageBytes = await file.readAsBytes();
+    if (!context.mounted) {
+      throw FlutterError('BuildContext is no longer mounted.');
+    }
 
     return applyToBytes(
       context: context,
@@ -85,6 +88,9 @@ class WidgetWatermark {
       imageUrl,
       headers: headers,
     );
+    if (!context.mounted) {
+      throw FlutterError('BuildContext is no longer mounted.');
+    }
 
     return applyToBytes(
       context: context,

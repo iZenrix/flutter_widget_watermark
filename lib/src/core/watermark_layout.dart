@@ -10,12 +10,6 @@ enum WatermarkLayoutType {
 }
 
 class WatermarkLayout {
-  final WatermarkLayoutType type;
-  final Alignment? alignment;
-  final Offset? offset;
-  final EdgeInsets padding;
-  final Size spacing;
-  final List<WatermarkPosition>? positions;
 
   const WatermarkLayout._({
     required this.type,
@@ -72,4 +66,10 @@ class WatermarkLayout {
       positions: positions,
     );
   }
+  final WatermarkLayoutType type;
+  final Alignment? alignment;
+  final Offset? offset;
+  final EdgeInsets padding;
+  final Size spacing;
+  final List<WatermarkPosition>? positions;
 }
